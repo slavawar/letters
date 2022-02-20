@@ -3,7 +3,7 @@ count = 1
 result_array = []
 
 for dec in dec_array:
-    if count % 2 == 0: dec = dec.upper()
+    if not count & 1: dec = dec.upper()
     result_array.append(f'{dec}[{str(count)}]')
     count = count + 1
 
